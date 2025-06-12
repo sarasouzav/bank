@@ -4,40 +4,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="src/style.css">
     <title>Create Your Account</title>
 </head>
 
 <body>
 
     <main id="form-container">
-      
-          
-            <div class="form-header">
-                 <h1 id="form-title">Create Your Account</h1>
-
-                 <button class="btn-default">
-                    <i class="fa-solid fa-right-to-bracket"> </i>
-                 </button>
-            </div>
 
 
-              <form action="register_user.php" method="post" id="form">
-                    <div id="input_container">
-                        <div class="input-box">
-                            <label for="name" class="form-label">
-                                First Name
-                            </label>
-                            <div class="input-field"></div>
-                        </div>
+        <div class="form-header">
+            <h1 id="form-title">Create Your Account</h1>
+
+            <button class="btn-default">
+                <i class="fa-solid fa-right-to-bracket"></i>
+            </button>
+        </div>
+
+
+        <form action="register_user.php" method="post" id="form">
+
+            <div id="input_container">
+                <div class="input-box">
+                    <label for="firstname" class="form-label">
+                        First Name
+                    </label>
+                    <div class="input-field">
+                        <input type="text" name="firstname" id="firstname" class="form-control" placeholder="first name">
+
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                </div>
+
+
+
+                <div class="input-box">
+                    <label for="lastname" class="form-label">
+                        Last Name
+                    </label>
+                    <div class="input-field">
+                        <input type="text" name="lastname" id="lastname" class="form-control" placeholder="last name">
+
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                </div>
+
+                  <div class="input-box">
+                    <label for="cpf" class="form-label">
+                        CPF
+                    </label>
+                    <div class="input-field">
+                        <input type="number" name="cpf" id="cpf" class="form-control" placeholder="cpf">
+
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                </div>
+
+
+                
+                  <div class="input-box">
+                    <label for="email" class="form-label">
+                        E-mail
+                    </label>
+                    <div class="input-field">
+                        <input type="email" name="email" id="email" class="form-control" placeholder="example@outlook.com">
+
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                </div>
+
+                    <div class="input-box">
+                    <label for="password" class="form-label">
+                        Password
+                    </label>
+                    <div class="input-field">
+                        <input type="password" name="password" id="password" class="form-control" placeholder="*********">
+
+                        <i class="fa-regular fa-eye-slash password-icon"></i>
+                    </div>
+                </div>
+
+                
+                    <div class="input-box">
+                    <label for="confirm-password" class="form-label">
+                       Confirm Password
+                    </label>
+                    <div class="input-field">
+                        <input type="password" name="confirm-password" id="confirm-password" class="form-control" placeholder="*********">
+
+                        <i class="fa-regular fa-eye-slash password-icon"></i>
+                    </div>
+                </div>
+
+             <div class="radio-container">
+                <label for="form-label">
+                    User Type
+                </label>
+
+            
+                <div id="user-inputs">
+                    <div class="radio-box">
+                        <input type="radio" name="usertype" id="custumer" class="form-control" value="custumer">
+                        <label for="custumer" class="form-label">
+                            Custumer
+                        </label>
+                    </div>
+                
+
+
+                     <div class="radio-box">
+                        <input type="radio" name="usertype" id="merchant" class="form-control" value="merchant">
+                        <label for="merchant" class="form-label">
+                            Merchant
+                        </label>
                     </div>
 
 
 
 
-              </form>
-               
-<!--
+
+
+                </div>
+
+
+
+
+             </div>
+            </div>
+
+                <button type="submit" class="btn-default">
+                    <i class="fa-solid fa-check"></i>
+                    Create account
+
+                </button>
+
+
+        </form>
+
+        <!--
                 <div class="box">
                     <div class="inputBox">
                         <input type="text" name="firstname" id="firstname" class="inputUser" required>
@@ -79,7 +184,7 @@
                     </div>
                     <button type="submit">Sign Up</button>
           -->
-        </main>
+    </main>
 
 
 

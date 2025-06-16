@@ -136,8 +136,9 @@ body {
     color: #272727;
 }
 
+
 .form-control:focus {
-    outline: nome;
+    outline: none;
 }
 
 .input-box .input-field:focus-within {
@@ -145,9 +146,9 @@ body {
 
 }
 
+
 .radio-container {
     grid-column: span 2;
-
 }
 
 #user-inputs {
@@ -155,16 +156,26 @@ body {
     gap: 20px;
 }
 
-.radio-container {
+.radio-box {
     display: flex;
     gap: 4px;
     align-items: center;
-
+   
 }
+
+
+
+
 
 .form-control[type="radio"] {
     accent-color: #6366f1;
 }
+
+
+
+
+
+
 
 
 @media screen and (max-width: 500px) {
@@ -175,9 +186,12 @@ body {
     }
 
     #input-container {
+
         display: flex;
         flex-direction: column;
         gap: 38px;
 
     }
 }
+
+
